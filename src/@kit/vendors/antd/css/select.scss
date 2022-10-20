@@ -1,0 +1,76 @@
+// Import mixins
+@import 'mixins.scss';
+
+.ant-select {
+  border-radius: 10vw;
+  &-open {
+    .ant-select-selection {
+      // border-color: $primary;
+      border-color: transparent;
+      background-color: #ff0000;
+    }
+  }
+
+  &-selection {
+    &:hover {
+      // border-color: $primary;
+      border-color: #ff0000;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+// DARK THEME STYLES
+[data-kit-theme='dark'] {
+  .ant-select {
+    border: #ff0000;
+    border-radius: 10vw;
+    &-multiple {
+      .ant-select-selection-item {
+        color: $dark-gray-1;
+        background: $primary;
+        
+
+        &-remove {
+          color: $dark-gray-1;
+        }
+      }
+    }
+
+    &-item-option-active:not(.ant-select-item-option-disabled),
+    &-item-option-selected:not(.ant-select-item-option-disabled) {
+      color: $dark-gray-1;
+      background: $primary;
+    }
+
+    // antd v3 styles
+    &-selection {
+      &--multiple {
+        .ant-select-selection__choice {
+          color: $dark-gray-1;
+          background: $primary;
+
+          &-remove {
+            color: $dark-gray-3;
+          }
+        }
+      }
+    }
+
+    &-dropdown-menu-item {
+      &-selected {
+        color: $dark-gray-1;
+        // background: $primary;
+        background: red;
+      }
+    }
+
+    &-tree-dropdown {
+      .ant-select-dropdown-search {
+        .ant-select-search__field {
+          background: $dark-gray-5;
+        }
+      }
+    }
+  }
+}

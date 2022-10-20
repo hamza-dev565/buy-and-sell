@@ -1,0 +1,55 @@
+@import 'mixins.scss';
+
+.cursorPointer{
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #41b883;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.itemAction {
+  margin-left: auto;
+  white-space: nowrap;
+  width: 8px;
+  height: 15px;
+  margin-right: rem(20);
+
+  span {
+    @include transition-fast();
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 15px;
+    height: 22px;
+
+    &:before {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      transform: rotate(45deg);
+      content: '';
+      width: 7px;
+      height: 2px;
+      background-color: $blue;
+      border-radius: 0px;
+    }
+
+    &:after {
+      position: absolute;
+      top: 9px;
+      left: 0;
+      transform: rotate(-45deg);
+      content: '';
+      width: 7px;
+      height: 2px;
+      background-color: $blue;
+      border-radius: 0px;
+    }
+  }
+}

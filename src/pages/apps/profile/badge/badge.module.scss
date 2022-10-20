@@ -1,0 +1,39 @@
+.wraper {
+  width: 50%;
+  border-right: 0.5px solid lightgray;
+  .badgeSec1 {
+    h2 {
+      font-weight: 600;
+      font-size: 22px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid lightgray;
+    padding: 30px 0px;
+    .badgeIcon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ededad;
+      margin-right: 30px;
+    }
+  }
+}
+.badgeSec2 {
+  display: flex;
+  flex-wrap: wrap;
+  .lock {
+    margin: 15px 10px;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+  }
+}

@@ -1,0 +1,39 @@
+.main {
+  padding: 15px 15px 0px 0px;
+  border-bottom: 1px solid lightgray;
+
+  display: flex;
+  p {
+    margin: 0px 20px;
+    padding-bottom: 10px;
+    // border-bottom: 2px solid #5edda4;
+  }
+}
+.cardWraper {
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  margin-top: 25px;
+  padding: 10px;
+  width: 85%;
+  .head {
+    p {
+      margin: 0px;
+      margin-left: 7px;
+    }
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    // background-color: #b893c4;
+    background-color: rgb(214, 51, 214);
+
+  }
+  .star {
+    margin-left: 5px;
+    margin-bottom: 2px;
+  }
+}

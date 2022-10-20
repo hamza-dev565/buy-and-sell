@@ -1,0 +1,14 @@
+const actions = {
+  SET_STATE: 'userdata/SET_STATE',
+  GET_PROFILE: 'userdata/GET_PROFILE',
+  EDIT_PROFILE: 'userdata/EDIT_PROFILE',
+  GET_MY_ORDERS: 'userdate/GET_MY_ORDERS',
+  GET_MY_REVIEWS: 'userdata/GET_MY_REVIEWS',
+  GET_ORDERS_FOR_ADMIN: 'userdata/GET_ORDERS_FOR_ADMIN',
+  CREATE_ORDER: 'userdata/CREATE_ORDER',
+  GET_PROMOTIONS: 'userdata/GET_PROMOTIONS',
+  CREATE_PROMOTION: 'userdata/CREATE_PROMOTION',
+  EDIT_PROMOTION: 'userdata/EDIT_PROMOTION'
+}
+
+export default actions
